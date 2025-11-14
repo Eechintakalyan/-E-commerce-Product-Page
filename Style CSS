@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    padding: 40px;
+}
+
+.product-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail-row {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.thumb {
+    width: 22%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.thumb:hover {
+    transform: scale(1.05);
+}
+
+.details-section {
+    flex: 1.2;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.desc {
+    margin: 10px 0 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.sizes span {
+    padding: 10px 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sizes span.active {
+    background: #444;
+    color: white;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.qty-box button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ddd;
+    border: none;
+}
+
+.qty-box input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.add-btn {
+    width: 200px;
+    background: #ff5722;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.add-btn:hover {
+    background: #e64a19;
+}
+
+.msg {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .product-container {
+        flex-direction: column;
+    }
+}
