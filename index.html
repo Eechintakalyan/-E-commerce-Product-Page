@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="product-container">
+
+        <!-- Product Images -->
+        <div class="image-section">
+            <img id="mainImage" src="images/shoe1.jpg" class="main-img">
+
+            <div class="thumbnail-row">
+                <img src="images/shoe1.jpg" class="thumb" onclick="changeImage(this)">
+                <img src="images/shoe2.jpg" class="thumb" onclick="changeImage(this)">
+                <img src="images/shoe3.jpg" class="thumb" onclick="changeImage(this)">
+                <img src="images/shoe4.jpg" class="thumb" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="details-section">
+            <h2>Men's Sports Running Shoes</h2>
+            <p class="price">$79.99</p>
+
+            <p class="desc">
+                Lightweight running shoes designed for comfort and durability.
+                Perfect for daily training, walking, and gym workouts.
+            </p>
+
+            <!-- Size Selector -->
+            <h3>Select Size:</h3>
+            <div class="sizes">
+                <span onclick="selectSize(this)">7</span>
+                <span onclick="selectSize(this)">8</span>
+                <span onclick="selectSize(this)">9</span>
+                <span onclick="selectSize(this)">10</span>
+            </div>
+
+            <!-- Quantity -->
+            <h3>Quantity:</h3>
+            <div class="qty-box">
+                <button onclick="changeQty(-1)">-</button>
+                <input id="qty" type="text" value="1" readonly>
+                <button onclick="changeQty(1)">+</button>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="add-btn" onclick="addToCart()">
+                Add to Cart
+            </button>
+
+            <p id="cartMessage" class="msg"></p>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
